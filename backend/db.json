@@ -1,0 +1,600 @@
+{
+  "users": [
+    {
+      "email": "mn51155@gmail.com",
+      "password": "$2a$10$q2t7No2bxOwqVL7KZoFZvebuIkMEMSwfE6ir9oLu4VdGqaPNQ7dKa",
+      "username": "masoume01",
+      "role": "project_manager",
+      "id": 1
+    },
+    {
+      "email": "asgarimostafa0066@gmail.com",
+      "password": "$2a$10$Qofh5zw5cGsy9cA7UUc09.yB.9UaIPDrob4PoP3XWBZ40RJutZPfC",
+      "username": "mustafa",
+      "role": "contractor",
+      "id": 2
+    },
+    {
+      "email": "maryam@gmail.com",
+      "password": "$2a$10$dcABuQgzzICf2iZzMx9a4eOrLkx7iYeTZM6.vbT7Dp1ayoVrzyumm",
+      "username": "maryam01",
+      "role": "project_manager",
+      "id": 4
+    },
+    {
+      "email": "mobina@gmail.com",
+      "password": "$2a$10$P2SFT9KMVSPLIkBaLiWNZ.QsdTVw34VuaGtU8MYphArAGl2AbJBfG",
+      "username": "mobina",
+      "role": "admin",
+      "id": 5
+    }
+  ],
+  "contractors": [
+    {
+      "name": "mustafa",
+      "email": "mustafa@gmail.com",
+      "phone": "0049178245847",
+      "userId": 2,
+      "id": 1
+    }
+  ],
+  "projects": [
+    {
+      "title": "Stuttgart Bahnhof",
+      "description": "Stuttgart Bahnhof.",
+      "managerId": 4,
+      "startDate": "2025-02-11",
+      "endDate": "2028-12-11",
+      "status": "completed",
+      "id": 1
+    },
+    {
+      "title": "Schorndorf Strasse",
+      "description": "Schorndorfer Strassse",
+      "managerId": 4,
+      "startDate": "2025-12-08",
+      "endDate": "2027-12-09",
+      "status": "planning",
+      "id": 2
+    },
+    {
+      "title": "Hessen",
+      "description": "in Hessen",
+      "managerId": 4,
+      "startDate": "2024-12-08",
+      "endDate": "2029-02-09",
+      "status": "in_progress",
+      "id": 3
+    },
+    {
+      "title": "project 7",
+      "description": "..",
+      "managerId": 4,
+      "startDate": "2022-12-02",
+      "endDate": "2029-12-07",
+      "status": "planning",
+      "id": 5
+    },
+    {
+      "title": "project 10",
+      "description": "....",
+      "managerId": 1,
+      "startDate": "2022-02-12",
+      "endDate": "2029-12-04",
+      "status": "planning",
+      "id": 6
+    },
+    {
+      "title": "Project 01",
+      "description": "Big bang10",
+      "managerId": 4,
+      "startDate": "2025-10-22",
+      "endDate": "2026-02-27",
+      "status": "in progress",
+      "id": 7
+    }
+  ],
+  "tasks": [
+    {
+      "title": "task01",
+      "projectId": 2,
+      "contractorId": 2,
+      "status": "planning",
+      "comments": [],
+      "id": 1
+    }
+  ],
+  "documents": [],
+  "messages": [
+    {
+      "id": 1,
+      "type": "task_status_changed",
+      "relatedTaskId": 101,
+      "sender": "John",
+      "recipientRole": "project_manager",
+      "text": "User John changed the status of Task #101 to 'In Progress'.",
+      "read": false,
+      "createdAt": "2025-08-14T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "type": "task_status_changed",
+      "relatedTaskId": 102,
+      "sender": "Sarah",
+      "recipientRole": "admin",
+      "text": "User Sarah changed the status of Task #102 to 'Completed'.",
+      "createdAt": "2025-08-14T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "type": "general",
+      "sender": "System",
+      "recipientRole": "user",
+      "text": "Welcome message sent to new user.",
+      "createdAt": "2025-08-14T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "type": "comment_added",
+      "relatedTaskId": 101,
+      "sender": "John",
+      "recipientRole": "project_manager",
+      "text": "John added a new comment to Task #101.",
+      "createdAt": "2025-08-14T10:30:00Z"
+    },
+    {
+      "id": 5,
+      "type": "task_status_changed",
+      "relatedTaskId": 103,
+      "sender": "David",
+      "recipientRole": "user",
+      "text": "User David changed the status of Task #103 to 'Pending'.",
+      "createdAt": "2025-08-14T11:00:00Z"
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #1 to 'pending'.",
+      "createdAt": "2025-08-14T10:28:24.364Z",
+      "id": 6
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #3 to 'in_progress'.",
+      "createdAt": "2025-08-14T10:28:52.377Z",
+      "id": 7
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'completed'.",
+      "createdAt": "2025-08-14T14:12:08.605Z",
+      "id": 8
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'in_progress'.",
+      "createdAt": "2025-08-14T14:14:06.191Z",
+      "id": 9
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'pending'.",
+      "createdAt": "2025-08-14T14:14:53.463Z",
+      "id": 10
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'in_progress'.",
+      "createdAt": "2025-08-17T20:24:26.134Z",
+      "read": false,
+      "id": 11
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'completed'.",
+      "createdAt": "2025-08-17T20:24:32.289Z",
+      "read": false,
+      "id": 12
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'pending'.",
+      "createdAt": "2025-08-17T20:25:04.208Z",
+      "read": false,
+      "id": 13
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'completed'.",
+      "createdAt": "2025-08-17T20:26:19.864Z",
+      "read": false,
+      "id": 14
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'in_progress'.",
+      "createdAt": "2025-08-17T20:26:45.750Z",
+      "read": false,
+      "id": 15
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'pending'.",
+      "createdAt": "2025-08-17T21:25:03.247Z",
+      "read": false,
+      "id": 16
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Site Preparation to 'pending'.",
+      "createdAt": "2025-08-17T21:25:26.199Z",
+      "read": false,
+      "id": 17
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'in_progress'.",
+      "createdAt": "2025-08-17T21:27:58.269Z",
+      "read": false,
+      "id": 18
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'pending'.",
+      "createdAt": "2025-08-17T21:28:15.404Z",
+      "read": false,
+      "id": 19
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Bridge Design to 'in_progress'.",
+      "createdAt": "2025-08-17T21:28:23.476Z",
+      "read": false,
+      "id": 20
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 2,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #Foundation Work to 'in_progress'.",
+      "createdAt": "2025-08-17T22:02:43.934Z",
+      "read": false,
+      "id": 21
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'pending'.",
+      "createdAt": "2025-08-20T21:08:45.206Z",
+      "read": false,
+      "id": 22
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'in_progress'.",
+      "createdAt": "2025-08-21T20:36:35.055Z",
+      "read": false,
+      "id": 23
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 2,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'completed'.",
+      "createdAt": "2025-08-21T21:05:47.003Z",
+      "read": false,
+      "id": 24
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'pending'.",
+      "createdAt": "2025-08-24T07:49:22.653Z",
+      "read": false,
+      "id": 25
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in_progress'.",
+      "createdAt": "2025-08-24T09:08:02.999Z",
+      "read": false,
+      "id": 26
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'completed'.",
+      "createdAt": "2025-08-24T09:09:42.445Z",
+      "read": false,
+      "id": 27
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'pending'.",
+      "createdAt": "2025-08-24T09:09:52.139Z",
+      "read": false,
+      "id": 28
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:10:00.205Z",
+      "read": false,
+      "id": 29
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'pending'.",
+      "createdAt": "2025-08-24T09:10:05.564Z",
+      "read": false,
+      "id": 30
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:12:18.476Z",
+      "read": false,
+      "id": 31
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'pending'.",
+      "createdAt": "2025-08-24T09:12:22.323Z",
+      "read": false,
+      "id": 32
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:44:30.057Z",
+      "read": false,
+      "id": 33
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'pending'.",
+      "createdAt": "2025-08-24T09:44:35.199Z",
+      "read": false,
+      "id": 34
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'pending'.",
+      "createdAt": "2025-08-24T09:50:21.524Z",
+      "read": false,
+      "id": 35
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:50:25.915Z",
+      "read": false,
+      "id": 36
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:50:30.659Z",
+      "read": false,
+      "id": 37
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'completed'.",
+      "createdAt": "2025-08-24T09:50:47.116Z",
+      "read": false,
+      "id": 38
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 3,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #documentation to 'in progress'.",
+      "createdAt": "2025-08-24T09:54:14.697Z",
+      "read": false,
+      "id": 39
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'pending'.",
+      "createdAt": "2025-08-24T20:39:15.831Z",
+      "read": false,
+      "id": 40
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'in progress'.",
+      "createdAt": "2025-08-24T20:39:44.760Z",
+      "read": false,
+      "id": 41
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'completed'.",
+      "createdAt": "2025-08-24T20:40:38.262Z",
+      "read": false,
+      "id": 42
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'pending'.",
+      "createdAt": "2025-08-24T20:43:51.195Z",
+      "read": false,
+      "id": 43
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'in progress'.",
+      "createdAt": "2025-08-24T20:44:05.395Z",
+      "read": false,
+      "id": 44
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #foundation to 'in progress'.",
+      "createdAt": "2025-08-24T20:44:13.075Z",
+      "read": false,
+      "id": 45
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 4,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #münchen to 'in progress'.",
+      "createdAt": "2025-08-26T08:12:07.023Z",
+      "read": false,
+      "id": 46
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 2,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #test1 to 'pending'.",
+      "createdAt": "2025-08-26T20:12:09.586Z",
+      "read": false,
+      "id": 47
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 4,
+      "sender": "masoume",
+      "recipientRole": "project_manager",
+      "text": "User masoume changed the status of Task #test3 to 'pending'.",
+      "createdAt": "2025-08-26T20:12:15.184Z",
+      "read": false,
+      "id": 48
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "mobina",
+      "recipientRole": "project_manager",
+      "text": "User mobina changed the status of Task #foundation to 'in progress'.",
+      "createdAt": "2025-10-17T10:55:58.962Z",
+      "read": false,
+      "id": 49
+    },
+    {
+      "type": "task_status_changed",
+      "relatedTaskId": 1,
+      "sender": "mobina",
+      "recipientRole": "project_manager",
+      "text": "User mobina changed the status of Task #foundation to 'completed'.",
+      "createdAt": "2025-10-17T10:56:10.264Z",
+      "read": false,
+      "id": 50
+    }
+  ]
+}
