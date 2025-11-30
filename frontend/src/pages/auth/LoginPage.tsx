@@ -40,7 +40,7 @@ useEffect(()=>{
 setValidationErrors({})
 try{
          await loginSchema.validate(formData,{abortEarly:false})
-  const result:CompleteAuthResponse= await  dispatch(login(formData)).unwrap()
+         await  dispatch(login(formData)).unwrap()
 
        Swal.fire({
        icon: 'success',

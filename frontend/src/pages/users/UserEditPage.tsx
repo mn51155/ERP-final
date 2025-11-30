@@ -79,9 +79,9 @@ if(!user) return;
 handleEditUser(
   Number(id),
   user,
-  contractor,
-  formData,
   contractorData,
+  formData,
+  contractor,
  )
 
   

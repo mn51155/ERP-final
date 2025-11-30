@@ -1,5 +1,6 @@
 import axios from 'axios'
-import type { RegisterCredentials, LoginCredentials, AuthResponse ,User, CompleteAuthResponse} from '@/features/auth/types'
+import type { User } from '../users/types'
+import type { RegisterCredentials, LoginCredentials, AuthResponse , CompleteAuthResponse} from '@/features/auth/types'
 import axiosInstance from '../../api/axiosInstance'
 
 const API_URL = 'http://localhost:8000'

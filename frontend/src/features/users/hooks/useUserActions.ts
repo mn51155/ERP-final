@@ -42,7 +42,7 @@ const handleEditUser=async(
   user:User,
   contractorData:ContractorFormData,
   formData:Partial<User>,
-  contractor:Partial<Contractor>,
+  contractor?:Contractor,
   
 )=>{
 

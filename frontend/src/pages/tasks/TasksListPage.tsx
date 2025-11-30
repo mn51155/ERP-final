@@ -51,7 +51,7 @@ useEffect(() => {
           .filter((p) => taskTab === 'all' || p.status === taskTab)
           .map((task:Task) => 
              {
-            const project=projects.find(project=>project.id==task.projectId)!
+            const project:Project=projects.find(project=>project.id==task.projectId)!
         return(
           <TaskCard key={task.id} task={task} project={project} userRole={user ? user.role: undefined}  /> )
         }

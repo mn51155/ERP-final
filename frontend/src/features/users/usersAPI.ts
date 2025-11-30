@@ -1,9 +1,9 @@
-// src/features/users/api.ts
-import axios from "axios";
+
+
 import type { User } from "./types";
 import axiosInstance from "@/api/axiosInstance";
 
-const API_URL = "/users"; // مسیر سرور
+const API_URL = "/users"; 
 
 export const getUsers = async (): Promise<User[]> => {
   const res = await axiosInstance.get(API_URL);
