@@ -1,7 +1,7 @@
 import { useState } from "react";
-import { useAppSelector } from "../../store/hooks";
+import { useAppSelector } from "@/store/hooks";
 
-import { useTaskActions } from "../../features/tasks/hooks/useTaskActions";
+import { useTaskActions } from "@/features/tasks/hooks/useTaskActions";
 
 
 

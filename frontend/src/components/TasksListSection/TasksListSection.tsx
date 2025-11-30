@@ -1,6 +1,6 @@
 import React from 'react';
-import { useAppDispatch, useAppSelector } from '../../store/hooks';
-import type{ Task } from '../../features/tasks/types';
+import { useAppSelector } from '@/store/hooks';
+import type{ Task } from '@/features/tasks/types';
 import TaskCard from '../cards/TaskCard';
 
 

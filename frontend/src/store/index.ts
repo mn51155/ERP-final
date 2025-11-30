@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import authReducer from './../features/auth/authSlice';
-import projectReducer from '../features/projects/projectSlice'
-import taskReducer from '../features/tasks/taskSlice'
+import authReducer from '@/features/auth/authSlice';
+import projectReducer from '@/features/projects/projectSlice'
+import taskReducer from '@/features/tasks/taskSlice'
 import logger from 'redux-logger'
-import usersReducer from '../features/users/usersSlice'
-import contractorReducer from '../features/contractors/contractorSlice'
+import usersReducer from '@/features/users/usersSlice'
+import contractorReducer from '@/features/contractors/contractorSlice'
 
 
 

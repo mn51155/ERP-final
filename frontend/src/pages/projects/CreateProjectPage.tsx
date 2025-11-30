@@ -1,7 +1,7 @@
 import { useState } from "react";
 
-import { useAppSelector } from "../../store/hooks";
-import {useProjectActions} from '../../features/projects/hooks/useProjectActions'
+import { useAppSelector } from "@/store/hooks";
+import {useProjectActions} from '@/features/projects/hooks/useProjectActions'
 
 
 const NewProject = () => {

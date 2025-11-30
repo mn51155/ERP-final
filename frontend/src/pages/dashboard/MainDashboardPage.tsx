@@ -1,10 +1,10 @@
 
-import { useAppSelector } from '../../store/hooks';
+import { useAppSelector } from '@/store/hooks';
 import { Link } from 'react-router-dom';
-import DashboardChart from '../../components/charts/dashboardChart';
-import ProjectsListSection from '../../components/ProjectsListSection/ProjectsListSection';
-import TaskListSection from '../../components/TasksListSection/TasksListSection';
-import UserListSection from '../../components/UsersListSection/UserListSection';
+import DashboardChart from '@/components/charts/dashboardChart';
+import ProjectsListSection from '@/components/ProjectsListSection/ProjectsListSection';
+import TaskListSection from '@/components/TasksListSection/TasksListSection';
+import UserListSection from '@/components/UsersListSection/UserListSection';
 
 
 

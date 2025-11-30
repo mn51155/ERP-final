@@ -1,9 +1,9 @@
 // src/pages/projects/EditProject.tsx
 import { useEffect, useState } from "react";
 import { useParams} from "react-router-dom";
-import { useAppSelector } from "../../store/hooks";
-import { useProjectActions } from "../../features/projects/hooks/useProjectActions";
-import type { Project } from "../../features/projects/types";
+import { useAppSelector } from "@/store/hooks";
+import { useProjectActions } from "@/features/projects/hooks/useProjectActions";
+import type { Project } from "@/features/projects/types";
 
 const EditProject = () => {
 

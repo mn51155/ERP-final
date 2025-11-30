@@ -1,6 +1,6 @@
 import React from 'react'
 
-import UserListSection from '../../components/UsersListSection/UserListSection'
+import UserListSection from '@/components/UsersListSection/UserListSection'
 export default function UsersListPage() {
   return (
     <>

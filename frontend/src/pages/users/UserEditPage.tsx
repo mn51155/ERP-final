@@ -1,10 +1,10 @@
 
 import { useParams} from "react-router-dom";
-import {  useAppSelector } from "../../store/hooks";
+import {  useAppSelector } from "@/store/hooks";
 import { useState, useEffect } from "react";
-import type { User } from "../../features/users/types";
+import type { User } from "@/features/users/types";
 
-import {useUserActions} from "../../features/users/hooks/useUserActions"
+import {useUserActions} from "@/features/users/hooks/useUserActions"
 
 
 

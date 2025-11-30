@@ -1,6 +1,6 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
-import type { RegisterCredentials, LoginCredentials, AuthState, AuthResponse, CompleteAuthResponse } from '../../features/auth/types'
+import type { RegisterCredentials, LoginCredentials, AuthState, AuthResponse, CompleteAuthResponse } from '@/features/auth/types'
 import * as authApi from './api'
 
 

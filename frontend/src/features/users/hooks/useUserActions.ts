@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import type { Contractor } from "@/features/contractors/types";
 import Swal from "sweetalert2";
 import { removeUserThunk } from "../usersSlice";
-import { useAppDispatch } from "../../../store/hooks";
+import { useAppDispatch } from "@/store/hooks";
 import { editUserThunk } from "../../users/usersSlice";
 import { createContractorThunk, updateContractorThunk } from "../../contractors/contractorSlice";
 

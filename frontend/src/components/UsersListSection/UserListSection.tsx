@@ -1,5 +1,5 @@
 
-import {  useAppSelector } from '../../store/hooks';
+import {  useAppSelector } from '@/store/hooks';
 import type { User } from '@/features/users/types';
 import UserCard from '../cards/UserCard';
 

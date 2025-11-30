@@ -1,8 +1,8 @@
 import { useParams } from "react-router-dom";
-import { useAppSelector } from "../../store/hooks";
+import { useAppSelector } from "@/store/hooks";
 import { useState, useEffect } from "react";
-import type { Task, Comment } from "../../features/tasks/types";
-import { useTaskActions } from "../../features/tasks/hooks/useTaskActions";
+import type { Task, Comment } from "@/features/tasks/types";
+import { useTaskActions } from "@/features/tasks/hooks/useTaskActions";
 
 const EditTask = () => {
 

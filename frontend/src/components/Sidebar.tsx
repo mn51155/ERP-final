@@ -1,5 +1,5 @@
-import { logout } from '../features/auth/authSlice';
-import { useAppDispatch, useAppSelector } from '../store/hooks'
+import { logout } from '@/features/auth/authSlice';
+import { useAppDispatch} from '@/store/hooks'
 import { Link, useNavigate } from 'react-router-dom';
 
 

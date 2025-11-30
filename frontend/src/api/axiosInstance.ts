@@ -1,9 +1,9 @@
 // src/app/api/axiosInstance.ts
 
 import axios from 'axios';
-import  store  from '../store/index'; // مسیر رو با توجه به پروژه‌ت تنظیم کن
-import { logout } from '../features/auth/authSlice'; // اکشن لاگ‌اوت
-import { isTokenExpired } from '../utils/authUtils';
+import  store  from '@/store/index'; 
+import { logout } from '@/features/auth/authSlice';
+import { isTokenExpired } from '@/utils/authUtils';
 
 const axiosInstance = axios.create({
   baseURL: 'https://erp-final-3.onrender.com/',

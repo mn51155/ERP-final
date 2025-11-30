@@ -1,11 +1,11 @@
 
-import type { Task } from '../../features/tasks/types';
-import type { Project } from '../../features/projects/types';
+import type { Task } from '@/features/tasks/types';
+import type { Project } from '@/features/projects/types';
 import type { User } from '@/features/users/types';
 
 
 import Swal from 'sweetalert2';
-import { useTaskActions } from '../../features/tasks/hooks/useTaskActions';
+import { useTaskActions } from '@/features/tasks/hooks/useTaskActions';
 import { Link } from 'react-router-dom';
 
 interface TaskCardProps {

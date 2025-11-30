@@ -1,5 +1,5 @@
-  import { useAppSelector } from '../../store/hooks';
-  import { StatusPieChart } from '../../components/charts/StatusPieChart';
+  import { useAppSelector } from '@/store/hooks';
+  import { StatusPieChart } from '@/components/charts/StatusPieChart';
   
   const statusLabels = {
   completed: 'completed',

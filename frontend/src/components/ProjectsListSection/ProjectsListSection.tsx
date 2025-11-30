@@ -1,5 +1,5 @@
-import { useAppSelector } from '../../store/hooks';
-import type { Project } from '../../features/projects/types';
+import { useAppSelector } from '@/store/hooks';
+import type { Project } from '@/features/projects/types';
 import ProjectCard from '../cards/ProjectCard';
 
 

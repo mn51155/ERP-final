@@ -1,7 +1,7 @@
 
 import type { User } from '@/features/users/types';
 import { Link } from 'react-router-dom';
-import { useUserActions } from '../../features/users/hooks/useUserActions';
+import { useUserActions } from '@/features/users/hooks/useUserActions';
 
 
 

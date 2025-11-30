@@ -2,14 +2,14 @@
 
 import {  useEffect, useState} from 'react'
 import type { FormEvent} from 'react'
-import { useAppDispatch, useAppSelector } from '../../store/hooks'
-import { login, logout } from '../../features/auth/authSlice'
+import { useAppDispatch, useAppSelector } from '@/store/hooks'
+import { login, logout } from '@/features/auth/authSlice'
 import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 import * as yup from 'yup'
-import { loginSchema } from '../../schemas/loginSchema'
-import type { CompleteAuthResponse} from '../../features/auth/types'
+import { loginSchema } from '@/schemas/loginSchema'
+import type { CompleteAuthResponse} from '@/features/auth/types'
 
 
 const LoginPage = () => {

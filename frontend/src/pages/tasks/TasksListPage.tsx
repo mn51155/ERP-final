@@ -1,11 +1,11 @@
 import { useAppSelector,useAppDispatch } from '../../store/hooks';
 
-import type { Project } from '../../features/projects/types';
-import type{ Task } from '../../features/tasks/types';
+import type { Project } from '@/features/projects/types';
+import type{ Task } from '@/features/tasks/types';
 import { useEffect,useState } from 'react';
-import { fetchProjectsThunk } from '../../features/projects/projectSlice';
-import { fetchTasksThunk } from '../../features/tasks/taskSlice';
-import TaskCard from '../../components/cards/TaskCard';
+import { fetchProjectsThunk } from '@/features/projects/projectSlice';
+import { fetchTasksThunk } from '@/features/tasks/taskSlice';
+import TaskCard from '@/components/cards/TaskCard';
 
 const AllTasks = () => {
    const user=useAppSelector((state)=>state.auth.user)   

@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
-import Sidebar from '../components/Sidebar';
-import Header from '../components/Header';
+import Sidebar from '@/components/Sidebar';
+import Header from '@/components/Header';
 import { Outlet } from 'react-router-dom';
-import { useAppDispatch, useAppSelector } from '../store/hooks';
-import { fetchProjectsThunk } from '../features/projects/projectSlice';
-import { fetchTasksThunk } from '../features/tasks/taskSlice';
-import { fetchUsersThunk } from '../features/users/usersSlice';
-import { fetchContractorsThunk } from '../features/contractors/contractorSlice';
+import { useAppDispatch, useAppSelector } from '@/store/hooks';
+import { fetchProjectsThunk } from '@/features/projects/projectSlice';
+import { fetchTasksThunk } from '@/features/tasks/taskSlice';
+import { fetchUsersThunk } from '@/features/users/usersSlice';
+import { fetchContractorsThunk } from '@/features/contractors/contractorSlice';
 
 export default function MainLayout() {
   const [sidebarOpen, setSidebarOpen] = useState(false);

@@ -1,10 +1,10 @@
 import React, {  useState } from 'react'
-import { useAppDispatch, useAppSelector } from '../../store/hooks'
-import { register } from '../../features/auth/authSlice'
+import { useAppDispatch, useAppSelector } from '@/store/hooks'
+import { register } from '@/features/auth/authSlice'
 import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 import * as yup from 'yup'
-import { registerSchema } from '../../schemas/registerSchema'
+import { registerSchema } from '@/schemas/registerSchema'
 
 const RegisterPage = () => {
 

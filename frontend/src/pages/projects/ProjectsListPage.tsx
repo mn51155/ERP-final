@@ -1,8 +1,8 @@
-import { useAppSelector,useAppDispatch } from '../../store/hooks';
-import ProjectCard from '../../components/cards/ProjectCard';
+import { useAppSelector,useAppDispatch } from '@/store/hooks';
+import ProjectCard from '@/components/cards/ProjectCard';
 import { useEffect,useState } from 'react';
-import { fetchProjectsThunk } from '../../features/projects/projectSlice';
-import { fetchTasksThunk } from '../../features/tasks/taskSlice';
+import { fetchProjectsThunk } from '@/features/projects/projectSlice';
+import { fetchTasksThunk } from '@/features/tasks/taskSlice';
 
 const AllProjects = () => {
   const { projects } = useAppSelector((state) => state.projects);

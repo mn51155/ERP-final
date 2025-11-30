@@ -1,10 +1,10 @@
 
 import { Link } from 'react-router-dom';
-import type { Project } from '../../features/projects/types';
-import type { Task } from '../../features/tasks/types';
-import type { User } from '../../features/users/types';
+import type { Project } from '@/features/projects/types';
+import type { Task } from '@/features/tasks/types';
+import type { User } from '@/features/users/types';
 
-import { useProjectActions } from '../../features/projects/hooks/useProjectActions';
+import { useProjectActions } from '@/features/projects/hooks/useProjectActions';
 
 interface ProjectCardProps {
   project: Project;
