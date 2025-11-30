@@ -1,6 +1,6 @@
 import type { User } from "../types";
 import { useNavigate } from "react-router-dom";
-import type { Contractor } from "@/features/contractors/types";
+import type { Contractor, ContractorFormData } from "@/features/contractors/types";
 import Swal from "sweetalert2";
 import { removeUserThunk } from "../usersSlice";
 import { useAppDispatch } from "@/store/hooks";
@@ -40,7 +40,7 @@ const handleEditUser=async(
   
   id:number,
   user:User,
-  contractorData:Partial<Contractor> |undefined,
+  contractorData:ContractorFormData,
   formData:Partial<User>,
   contractor:Partial<Contractor>,
   
@@ -49,6 +49,9 @@ const handleEditUser=async(
 
   if(!user){
    return
+  }
+  if(!id){
+    return
   }
  const userChanged=
   formData.username !== user?.username ||
@@ -83,7 +86,7 @@ const handleEditUser=async(
     if (result.isConfirmed) {
      await dispatch(editUserThunk({ id: Number(id), data: {...user,...formData}})).unwrap();
          if(formData.role === "contractor"){
-            if(contractor){
+            if(contractor?.id !== undefined){
               dispatch(updateContractorThunk({id:contractor.id , data:{...contractorData , userId:user.id}})).unwrap()
             }else{
               dispatch(createContractorThunk({...contractorData,userId:user.id})).unwrap()

@@ -97,16 +97,7 @@ if(formData.projectId==-1){
       dispatch(updateTaskThunk({ id: task.id, data: updatedTask }))
     
 
-       dispatch(addMessage({
-            type: 'task_status_changed',
-            relatedTaskId: task.id,
-            sender: user.username,
-            recipientRole: 'project_manager',
-            text: `User ${user.username} changed the status of Task #${task.title} to '${task.status}'.`,
-            createdAt:new Date().toISOString(),
-            read:false
-            
-          }));
+      
     }
   };
 
