@@ -9,7 +9,6 @@ import Swal from 'sweetalert2'
 import { useNavigate } from 'react-router-dom'
 import * as yup from 'yup'
 import { loginSchema } from '@/schemas/loginSchema'
-import type { CompleteAuthResponse} from '@/features/auth/types'
 
 
 const LoginPage = () => {

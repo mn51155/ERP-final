@@ -7,7 +7,6 @@ import CreateProjectPage from '../pages/projects/CreateProjectPage';
 import TasksListPage from '../pages/tasks/TasksListPage';
 import CreateTaskPage from '../pages/tasks/CreateTaskPage';
 import TaskEditPage from '../pages/tasks/TaskEditPage';
-import ContractorListPage from '../pages/contractors/ContractorsListPage';
 import ProtectedRoute from '../components/ProtectedRoute';
 import LoginPage from '../pages/auth/LoginPage';
 import RegisterPage from '../pages/auth/RegisterPage';
@@ -41,7 +40,7 @@ const routes: RouteObject[] = [
         { path: 'tasks', element: <TasksListPage /> },
         { path: 'tasks/:id/edit', element: <TaskEditPage /> },
 
-        { path: 'contractors', element: <ContractorListPage /> },
+        
       
 
         
