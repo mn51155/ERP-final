@@ -1,4 +1,4 @@
-// src/app/api/axiosInstance.ts
+
 
 import axios from 'axios';
 import  store  from '@/store/index'; 
@@ -11,7 +11,7 @@ const axiosInstance = axios.create({
 
 
 
-// بررسی قبل از ارسال هر درخواست
+
 axiosInstance.interceptors.request.use(
   (config) => {
     const token = localStorage.getItem('accessToken');
@@ -21,15 +21,14 @@ axiosInstance.interceptors.request.use(
 
     if (token && isTokenExpired(token)) {
       store.dispatch(logout());
-      window.location.href='/login'; // می‌فرستیم لاگین
+      window.location.href='/login'; 
 
-
-        // ساختن یک AbortController برای لغو درخواست
+        
     const controller = new AbortController();
     config.signal = controller.signal;
     controller.abort();
 
-     throw new Error('توکن منقضی شده، درخواست لغو شد.');//پرتاب خطا
+     throw new Error('Token has expired');
       
     }
 
@@ -40,13 +39,13 @@ axiosInstance.interceptors.request.use(
 
 
 
-// بررسی پاسخ‌ها
+
 axiosInstance.interceptors.response.use(
   (response) => response,
   (error) => {
     if (error.response?.status === 401) {
       store.dispatch(logout());
-      window.location.href='/login'; // می‌فرستیم لاگین// توکن مشکل داره یا حذف شده → بفرست لاگین
+      window.location.href='/login'; 
     }
     return Promise.reject(error);
   }

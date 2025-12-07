@@ -3,7 +3,7 @@ import type { User } from '../users/types'
 import type { RegisterCredentials, LoginCredentials, AuthResponse , CompleteAuthResponse} from '@/features/auth/types'
 import axiosInstance from '../../api/axiosInstance'
 
-const API_URL = 'http://localhost:8000'
+const API_URL = 'https://erp-final-3.onrender.com/'
 
 export async function registerUser(credentials: RegisterCredentials): Promise<AuthResponse> {
     console.log(credentials)
