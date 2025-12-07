@@ -6,7 +6,7 @@ import { logout } from '@/features/auth/authSlice';
 import { isTokenExpired } from '@/utils/authUtils';
 
 const axiosInstance = axios.create({
-  baseURL: 'https://erp-final-3.onrender.com/',
+  baseURL: 'https://erp-final-3.onrender.com',
 });
 
 
