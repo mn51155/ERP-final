@@ -14,7 +14,7 @@ export async function registerUser(credentials: RegisterCredentials): Promise<Au
 }
 
 export async function loginUser(credentials: LoginCredentials): Promise<CompleteAuthResponse> {
-  const response = await axios.post<CompleteAuthResponse>(`${API_URL}/auth/login`, credentials)
+  const response = await axios.post<CompleteAuthResponse>(`${API_URL}/login`, credentials)
   console.log('response.date:',response.data)
   return response.data
   
