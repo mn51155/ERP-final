@@ -76,7 +76,7 @@ const contractorSlice = createSlice({
       })
       .addCase(fetchContractorsThunk.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload ?? 'خطا در دریافت پیمانکارها';
+        state.error = action.payload ?? 'Failed to fetch contractors';
       })
 
       .addCase(createContractorThunk.fulfilled, (state, action) => {

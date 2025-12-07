@@ -29,7 +29,7 @@ const EditTask = () => {
 
   //
   const contractors=useAppSelector(state=>state.contractors.contractors)
-  console.log(contractors)
+ 
 
 
 
@@ -67,7 +67,7 @@ const EditTask = () => {
 
 
 
-console.log("task.contractorId",task?.contractorId)
+
 
 
 

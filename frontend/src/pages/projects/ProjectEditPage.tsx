@@ -93,7 +93,7 @@ const EditProject = () => {
 
   {managers.map((m) => (
     <option key={m.id} value={m.id}>
-      {m.username} {/* یا هر فیلدی که میخوای نمایش بدی */}
+      {m.username} 
     </option>
   ))}
 </select>

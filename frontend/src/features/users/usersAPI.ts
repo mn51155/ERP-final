@@ -22,5 +22,5 @@ export const updateUser = async (id: number, user: Partial<User>): Promise<User>
 
 export const deleteUser = async (id: number): Promise<number> => {
   await axiosInstance.delete(`${API_URL}/${id}`);
-  return id; // فقط id رو برمی‌گردونیم برای حذف از state
+  return id; 
 };

@@ -48,7 +48,7 @@ if(formData.projectId==-1){
     if (result.isConfirmed) {
       await dispatch(createTaskThunk({...formData,comments:[]}));
       Swal.fire("Created!");
-      navigate(-1); // یا هر جایی که می‌خوای برگرده
+      navigate(-1);  
     }
   };
 

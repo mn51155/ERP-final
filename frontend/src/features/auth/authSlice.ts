@@ -26,7 +26,7 @@ export const register = createAsyncThunk<AuthResponse, RegisterCredentials>(
     } catch (error: any) {
        console.log(error)
       const data = error?.response?.data
-      console.log('⛔️ Error response data:', data)
+      
 
       if (typeof data === 'string') {
         return thunkAPI.rejectWithValue(data)
@@ -45,8 +45,8 @@ export const register = createAsyncThunk<AuthResponse, RegisterCredentials>(
         return thunkAPI.rejectWithValue(messages)
       }
 
-      // فقط در صورتی که هیچ‌کدوم از بالا کار نکرد
-      return thunkAPI.rejectWithValue('خطای ناشناخته‌ای رخ داده است')
+     
+      return thunkAPI.rejectWithValue('Unexpected error occurred')
 
 
      
@@ -197,7 +197,7 @@ const authSlice = createSlice({
       })
       .addCase(restoreSession.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload || 'خطا در بازیابی نشست';
+        state.error = action.payload || 'Failed to retrieve session';
         state.accessToken = null;
         state.user = null;
         state.isAuthenticated = false;

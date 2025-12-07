@@ -38,7 +38,6 @@ const handleCreateProject= async (formData:any) => {
       return;
     }
 
-    // قبل از ثبت، تأیید بگیره
     const result = await Swal.fire({
       title: "Confirm Project",
       html: `
@@ -77,7 +76,7 @@ const handleCreateProject= async (formData:any) => {
       cancelButtonText: 'cancel'
     }).then((result) => {
       if (result.isConfirmed) {
-        // Dispatch اکشن حذف پروژه
+ 
         dispatch(deleteProjectThunk(id));
 
         Swal.fire(
@@ -97,7 +96,7 @@ const handleCreateProject= async (formData:any) => {
 
     if (!hasChanges) {
       await Swal.fire("No changes");
-      navigate(-1); // برگرد به صفحه قبلی
+      navigate(-1);  
       return;
     }
 

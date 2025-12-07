@@ -55,7 +55,7 @@ try{
       const formErrors: { [key: string]: string } = {}
   
       err.inner.forEach((validationErr: yup.ValidationError) => {
-        const key = validationErr.path || 'form' // اگر path نداشت، کلید 'form' بگذار
+        const key = validationErr.path || 'form' 
         formErrors[key] = validationErr.message
       })
    

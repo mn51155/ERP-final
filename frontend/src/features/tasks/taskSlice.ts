@@ -76,7 +76,7 @@ const taskSlice = createSlice({
       })
       .addCase(fetchTasksThunk.rejected, (state, action) => {
         state.loading = false;
-        state.error = action.payload ?? 'خطا در دریافت تسک‌ها';
+        state.error = action.payload ?? ' Failed to fetch tasks';
       })
 
       .addCase(createTaskThunk.fulfilled, (state, action) => {

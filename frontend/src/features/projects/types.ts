@@ -3,9 +3,9 @@ export interface Project {
   title: string;
   description: string;
   managerId:number
-  startDate: string;  // یا Date اگر توی پروژه‌ات تبدیل می‌کنی
+  startDate: string;  
   endDate: string;
-  status: 'planning' | 'in progress' | 'completed'; // بر اساس داده‌هات
+  status: 'planning' | 'in progress' | 'completed';    
 }
 
 

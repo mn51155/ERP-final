@@ -143,8 +143,6 @@ handleEditUser(
             <option value="admin">Admin</option>
             <option value="project_manager">Project Manager</option>
             <option value="contractor">Contractor</option>
-            <option value="employee">Employee</option>
-            <option value="client">Client</option>
             <option value="user">User</option>
           </select>
         </div>

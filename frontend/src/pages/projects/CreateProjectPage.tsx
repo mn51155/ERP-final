@@ -11,7 +11,6 @@ const NewProject = () => {
 
 
 
-  // فقط کاربرانی که نقش‌شون project_manager هست
   const managers = useAppSelector((state) =>
     state.users.users.filter((u) => u.role === "project_manager")
   );

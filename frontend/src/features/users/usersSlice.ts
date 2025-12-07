@@ -1,4 +1,4 @@
-// src/features/users/slice.ts
+
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import type { UsersState, User } from "./types";
 import * as api from "./usersAPI";
@@ -43,7 +43,7 @@ const usersSlice = createSlice({
     });
     builder.addCase(fetchUsersThunk.rejected, (state, action) => {
       state.loading = false;
-      state.error = action.error.message || "خطا در دریافت کاربران";
+      state.error = action.error.message || "Failed to fetch users";
     });
 
   
