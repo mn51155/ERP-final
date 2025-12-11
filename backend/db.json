@@ -1,26 +1,7 @@
 {
   "users": [
-    {
-      "email": "mn51155@gmail.com",
-      "password": "$2a$10$q2t7No2bxOwqVL7KZoFZvebuIkMEMSwfE6ir9oLu4VdGqaPNQ7dKa",
-      "username": "masoume01",
-      "role": "project_manager",
-      "id": 1
-    },
-    {
-      "email": "asgarimostafa0066@gmail.com",
-      "password": "$2a$10$Qofh5zw5cGsy9cA7UUc09.yB.9UaIPDrob4PoP3XWBZ40RJutZPfC",
-      "username": "mustafa",
-      "role": "contractor",
-      "id": 2
-    },
-    {
-      "email": "maryam@gmail.com",
-      "password": "$2a$10$dcABuQgzzICf2iZzMx9a4eOrLkx7iYeTZM6.vbT7Dp1ayoVrzyumm",
-      "username": "maryam01",
-      "role": "project_manager",
-      "id": 4
-    },
+   
+    
     {
       "email": "mobina@gmail.com",
       "password": "$2a$10$P2SFT9KMVSPLIkBaLiWNZ.QsdTVw34VuaGtU8MYphArAGl2AbJBfG",
@@ -40,8 +21,8 @@
   ],
   "projects": [
     {
-      "title": "Stuttgart Bahnhof",
-      "description": "Stuttgart Bahnhof.",
+      "title": "Stuttgarter Bahnhof",
+      "description": "Stuttgarter Bahnhof.",
       "managerId": 4,
       "startDate": "2025-02-11",
       "endDate": "2028-12-11",
