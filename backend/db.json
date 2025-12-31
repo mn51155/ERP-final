@@ -2,47 +2,12 @@
   "users": [
    
     
-      {
-    "email": "admin@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "admin",
+    {
+    "email": "mobina@gmail.com",
+    "password": "$2a$10$P2SFT9KMVSPLIkBaLiWNZ.QsdTVw34VuaGtU8MYphArAGl2AbJBfG",
+    "username": "mobina",
     "role": "admin",
-    "id": 1
-  },
-      {
-    "email": "emma@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "emma",
-    "role": "user",
-    "id": 2
-  },
-  {
-    "email": "karla@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "karla",
-    "role": "user",
-    "id": 3
-  },
-  {
-    "email": "sara@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "sara",
-    "role": "contractor",
-    "id": 4
-  },
-  {
-    "email": "john@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "john",
-    "role": "user",
     "id": 5
-  },
-  {
-    "email": "marco@gmail.com",
-    "password": "$2a$10$F6p5cJpS8uQZC5/N9.F2xuJGw8D4qKfvO0rtXxJ9q0hR7I6ZpQp5W",
-    "username": "marco",
-    "role": "contractor",
-    "id": 6
   }
 ]
   ,
